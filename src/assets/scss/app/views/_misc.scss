@@ -1,0 +1,29 @@
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: $body-bg;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #2b3553;
+  border-radius: 5px;
+}
+aside {
+  border: none !important;
+  // border-right: 1px solid lighten($black, 40%) !important;
+}
+.white-space-prewrap {
+  white-space: pre-wrap;
+}
+.y-centered {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid lighten($black, 5%);
+  background-color: $transparent-bg;
+}

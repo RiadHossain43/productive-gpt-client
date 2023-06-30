@@ -1,0 +1,111 @@
+$asset-base-path: "../../../../assets" !default;
+
+// Core
+
+@import "app/custom/functions";
+@import "~bootstrap/scss/functions";
+
+@import "app/custom/variables";
+@import "~bootstrap/scss/variables";
+
+@import "app/custom/mixins";
+@import "~bootstrap/scss/mixins";
+
+// Bootstrap components
+
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/images";
+@import "~bootstrap/scss/code";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/tables";
+@import "~bootstrap/scss/forms";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/transitions";
+@import "~bootstrap/scss/dropdown";
+@import "~bootstrap/scss/button-group";
+@import "~bootstrap/scss/input-group";
+@import "~bootstrap/scss/custom-forms";
+@import "~bootstrap/scss/nav";
+@import "~bootstrap/scss/navbar";
+@import "~bootstrap/scss/card";
+@import "~bootstrap/scss/breadcrumb";
+@import "~bootstrap/scss/pagination";
+@import "~bootstrap/scss/badge";
+@import "~bootstrap/scss/jumbotron";
+@import "~bootstrap/scss/alert";
+@import "~bootstrap/scss/progress";
+@import "~bootstrap/scss/media";
+@import "~bootstrap/scss/list-group";
+@import "~bootstrap/scss/close";
+@import "~bootstrap/scss/modal";
+@import "~bootstrap/scss/tooltip";
+@import "~bootstrap/scss/popover";
+@import "~bootstrap/scss/carousel";
+@import "~bootstrap/scss/utilities";
+@import "~bootstrap/scss/print";
+
+// Custom components
+
+@import "app/custom/alerts.scss";
+@import "app/custom/buttons.scss";
+@import "app/custom/dropdown.scss";
+@import "app/custom/footer.scss";
+@import "app/custom/forms.scss";
+@import "app/custom/images.scss";
+@import "app/custom/modal.scss";
+@import "app/custom/navbar.scss";
+@import "app/custom/type.scss";
+@import "app/custom/icons.scss";
+@import "app/custom/tables";
+@import "app/custom/checkboxes-radio";
+@import "app/custom/fixed-plugin";
+@import "app/custom/pagination.scss";
+@import "app/custom/misc.scss";
+@import "app/custom/rtl.scss";
+@import "app/custom/input-group.scss";
+@import "app/custom/example-pages.scss";
+@import "app/custom/progress.scss";
+@import "app/custom/badge.scss";
+@import "app/custom/pills.scss";
+@import "app/custom/tabs.scss";
+@import "app/custom/info-areas.scss";
+
+// Sections
+@import "app/custom/sections.scss";
+
+// Vendor / Plugins
+
+@import "app/custom/vendor/plugin-perfect-scrollbar.scss";
+@import "app/custom/vendor/plugin-animate-bootstrap-notify.scss";
+@import "app/custom/vendor/plugin-bootstrap-switch.scss";
+@import "app/custom/vendor/plugin-nouislider.scss";
+@import "app/custom/vendor/plugin-datetimepicker.scss";
+
+// Cards
+
+@import "app/custom/card";
+@import "app/custom/cards/card-chart";
+@import "app/custom/cards/card-map";
+@import "app/custom/cards/card-user";
+@import "app/custom/cards/card-task";
+@import "app/custom/cards/card-plain";
+@import "app/custom/cards/card-register";
+@import "app/custom/cards/card-stats";
+@import "app/custom/cards/card-chart";
+
+// React Differences
+
+@import "app/react/react-differences";
+
+// views 
+@import "app/views/auth_layout";
+@import "app/views/main_layout";
+@import "app/views/settings_layout";
+@import "app/views/general_layout";
+@import "app/views/chat_interface";
+@import "app/views/document_editor";
+@import "app/views/payments";
+@import "app/views/misc";
+@import "app/views/uploaders"

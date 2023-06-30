@@ -1,0 +1,24 @@
+.payment-form {
+  .input-group-expire-date {
+    // .input-group-text {
+    //   background-color: transparent;
+    //   padding: $input-padding-y 3px;
+    //   &:not(:first-child):not(:last-child) {
+    //     border-left: none;
+    //     border-right: none;
+    //   }
+
+    // }
+  }
+  .card-type-image {
+    margin: 0 2px;
+    width: 15px;
+  }
+  table {
+    tr {
+      td:last-child {
+        text-align: right;
+      }
+    }
+  }
+}

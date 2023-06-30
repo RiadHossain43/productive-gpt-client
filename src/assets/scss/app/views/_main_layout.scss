@@ -1,0 +1,38 @@
+.main-layout {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  .sidebar-chathead {
+    .sidebar-footer {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 25%;
+      width: 100%;
+      padding: 10px 20px;
+    }
+    .ims-promotion {
+      margin-top: 10px;
+      padding: 10px;
+      box-shadow: $box-shadow-sm;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .main-content {
+    position: relative;
+    flex-grow: 1;
+    // max-width: calc(100vw - 251px);
+  }
+  .alice-bot-picker {
+  }
+}
+@include media-breakpoint-down(md) {
+  .main-layout {
+    .main-content {
+      max-width: 100vw;
+    }
+  }
+}

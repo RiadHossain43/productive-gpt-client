@@ -1,0 +1,77 @@
+.auth-layout {
+  height: 100vh;
+  width: 100%;
+  // padding: 20px;
+  .information-container {
+    height: 100%;
+  }
+  .login-form {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .login-alice-promo-container,
+  .registration-alice-promo-container {
+    background-position: bottom;
+    background-size: contain;
+  }
+  .login-alice-promo-container {
+    background-image: linear-gradient(
+        to bottom,
+        rgba($body-bg, 0.95),
+        rgba($gray-900, 0.7)
+      ),
+      url("../../../img/theme/login-promo-bg.jpg");
+  }
+  .login-alice-logo {
+    width: 80%;
+  }
+  .login-hero-section {
+    width: 80%;
+    margin: 0 auto;
+    // color: $secondary-light;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    p {
+      // color: $secondary-light;
+    }
+  }
+  .login-alice-promo-slider {
+    height: 170px;
+    .swiper {
+      width: 80%;
+      height: 100%;
+      margin: 0 auto;
+    }
+    .swiper-slide {
+      height: 140px;
+    }
+    .swiper-pagination-bullet {
+      // background-color: $secondary-extra-light;
+      opacity: 0.6;
+    }
+    .swiper-pagination-bullet-active {
+      opacity: 1;
+    }
+    .card {
+      border: 0;
+      background-color: rgba($black, 0.6);
+      // color: $secondary-light;
+      p {
+        // color: $secondary-light;
+      }
+    }
+  }
+  .registration-alice-promo-container {
+    background-image: linear-gradient(
+        to bottom,
+        rgba($black, 0.6),
+        rgba($gray-900, 0.7)
+      ),
+      url("../../../img/theme/login-promo-bg.jpg");
+  }
+}

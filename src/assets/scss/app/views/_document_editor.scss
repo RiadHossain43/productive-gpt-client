@@ -1,0 +1,95 @@
+$guide-height: 75px;
+.document-editor-container {
+  padding: 0;
+  border-radius: $input-border-radius;
+  transition: 0.1s ease;
+  // color: $type-medium;
+  .toolbar {
+    border-bottom: 1px solid $input-border-color !important;
+    // background-color: $secondary-extra-light !important;
+    border-radius: 10px;
+  }
+  .text-toolbar-btn {
+    margin: 6px 8px !important;
+    padding: 6px !important;
+    // color: $type-medium !important;
+  }
+  .input-area {
+    min-height: 20px !important;
+    border-radius: 10px;
+  }
+  .toolbar-separator {
+    border-bottom: 1px solid $input-border-color;
+  }
+  hr {
+    margin: $input-padding-y 0;
+    background-color: $input-border-color;
+    height: 1px;
+    border: none;
+    opacity: 1;
+  }
+  &.editor-active {
+    .input-area {
+      margin-top: 5px;
+      border: 2px solid $primary;
+    }
+  }
+  &.editor-breathing {
+    // background-color: $secondary-extra-light;
+  }
+  &.editor-disabled {
+    border: none;
+    cursor: text;
+    min-height: 0 !important;
+  }
+  .alignment-container {
+    width: auto;
+    block-size: fit-content;
+  }
+  .resize-container {
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    overflow: hidden;
+  }
+  .resize-focused {
+  }
+  .resize-bar {
+    height: $guide-height;
+    width: 3px;
+  }
+  img {
+    pointer-events: none;
+  }
+  .resize-guides-container {
+    height: $guide-height;
+    left: 0;
+  }
+  .resize-guide {
+    width: 1px;
+    height: $guide-height;
+    background-color: $input-border-color;
+    transition: background 0.3s ease-in-out;
+  }
+
+  .mention-suggestions {
+    border: 1px solid $input-border-color;
+    background-color: $input-focus-bg;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 160px;
+    width: 225px;
+    z-index: 999;
+  }
+}
+.document-toolbar-button-separator {
+  color: $input-border-color;
+}
+.public-DraftStyleDefault-pre {
+  background-color: $gray-100;
+  border-radius: $border-radius;
+  padding: $btn-padding-y $btn-padding-y;
+  pre {
+    padding: 0;
+    margin: 0;
+  }
+}

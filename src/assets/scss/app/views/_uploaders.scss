@@ -1,0 +1,24 @@
+.image-dropzone,
+.image-editor-container {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+  // border: 1px solid $secondary-light;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+.image-editor {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  height: 200px;
+  width: 200px;
+  .image-crop-container {
+    display: inline-block;
+    width: fit-content;
+  }
+}

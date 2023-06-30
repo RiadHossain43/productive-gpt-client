@@ -1,0 +1,10 @@
+.settings-layout {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  .main-content {
+    position: relative;
+    flex-grow: 1;
+    max-width: 100vw;
+  }
+}
