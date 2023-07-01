@@ -7,19 +7,20 @@ const LoginHeroSection = ({}) => {
         Powered by{" "}
         <Link
           className="text-light"
-          to="https://imssystems.tech"
+          to="https://freetoolsapp.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          iMS Technologies
+          Freetools
         </Link>
       </small>
-      <h2 className="mb-md-2 mb-lg-4">Your intelligent Ai assistant.</h2>
+      <h2 className="mb-md-2 mb-lg-4">Your trusted email validator.</h2>
       <p>
-        Introducing A.L.I.C.E (Artificially, Learned, Intelligent, Compliance,
-        Expert): Your Ai Companion. Get instant access to a wealth of knowledge
-        on any topic (trained more on compliance and business management).
-        Discover the power of AI-driven assistance.
+        Introducing Free Tools Email Validator: Your go-to solution for accurate
+        email validation. Say goodbye to bounced emails and improve your email
+        deliverability with our powerful tool. Verify email addresses instantly
+        and ensure your mailing list is up-to-date and error-free. Boost your
+        email marketing success with Free Tools Email Validator.
       </p>
     </React.Fragment>
   );

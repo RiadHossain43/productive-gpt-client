@@ -13,7 +13,7 @@ const Login = () => {
               © {new Date().getFullYear()}{" "}
               <a
                 className="font-weight-bold ml-1"
-                href="https://imssystems.tech"
+                href="https://freetoolsapp.com"
               >
                 iMS Systems
               </a>{" "}

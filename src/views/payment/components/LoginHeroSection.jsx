@@ -7,11 +7,11 @@ const LoginHeroSection = ({}) => {
         Powered by{" "}
         <Link
           className="text-light"
-          to="https://imssystems.tech"
+          to="https://freetoolsapp.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          iMS Technologies
+          Freetools
         </Link>
       </small>
       <h2 className="mb-md-2 mb-lg-4">Your intelligent Ai assistant.</h2>

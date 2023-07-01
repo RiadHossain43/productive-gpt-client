@@ -28,7 +28,7 @@ jobs:
         run: yarn install
 
       - name: Production build
-        run: yarn build:dev
+        run: yarn build
         env:
           NODE_OPTIONS: "--max_old_space_size=4096"
           CI: false

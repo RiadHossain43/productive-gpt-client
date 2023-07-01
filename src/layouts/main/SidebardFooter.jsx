@@ -25,7 +25,7 @@ const SidebarFooter = () => {
           <BsStars /> Please also check out
         </small>
         <Link
-          to={"https://imssystems.tech/products.php#imssystems"}
+          to={"https://freetoolsapp.com/products.php#imssystems"}
           target="_blank"
           rel="noreferer"
         >

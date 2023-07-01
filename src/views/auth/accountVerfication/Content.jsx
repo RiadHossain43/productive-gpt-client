@@ -15,7 +15,7 @@ const Content = () => {
         <img className="login-alice-logo mb-4" src={logo} />
         <h4 className="">Almost there!</h4>
         <p className="mb-5">
-          You are just a step away from unleashing the power of Alice.
+          You are just a step away from unleashing the power of freetools.
         </p>
         <Button
           className="mt-5 mb-2"

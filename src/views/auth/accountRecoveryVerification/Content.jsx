@@ -78,7 +78,7 @@ const Content = () => {
         </Button>
         <small>Don't have an account? Let's </small>
         <Link className="btn-link" to={"/accounts/register"}>
-          <small>Get Started</small>
+          <small>Get Started</small>.
         </Link>
       </div>
     </PageLayout>

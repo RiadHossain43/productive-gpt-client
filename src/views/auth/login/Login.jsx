@@ -1,3 +1,6 @@
+import React from "react";
+import { BiEnvelope, BiLock, BiLogInCircle } from "react-icons/bi";
+import { Link } from "react-router-dom";
 import {
   Button,
   Form,
@@ -5,22 +8,15 @@ import {
   InputGroup,
   InputGroupAddon,
   InputGroupText,
-  Spinner,
 } from "reactstrap";
-import { BiEnvelope, BiLock, BiLogInCircle } from "react-icons/bi";
-import { MdOutlineWavingHand } from "react-icons/md";
-import { Link } from "react-router-dom";
 import logo from "../../../assets/img/brand/logo-ai.png";
 import useForm from "../../../hooks/useForm";
 import PageLayout from "../components/PageLayout";
-import { BiRocket } from "react-icons/bi";
 import {
   defaultAuthDataSet,
   defaultAuthDataSetValidation,
 } from "../utils/data";
 import { useLogin } from "./loginStore";
-import React from "react";
-import { MoonLoader, PuffLoader, PulseLoader } from "react-spinners";
 const Login = () => {
   let { dataModel, handleChange, isBusy, handleSubmit, isFormValid } = useForm(
     defaultAuthDataSet,
@@ -33,7 +29,7 @@ const Login = () => {
         <img className="login-alice-logo mb-4" src={logo} />
         <h4 className="">Welcome!</h4>
         <p className="mb-5">
-          Boost your business efficiency with AI technology.
+          Boost your business efficiency with our freetools.
         </p>
         <Form>
           <InputGroup>

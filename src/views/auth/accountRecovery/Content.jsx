@@ -62,7 +62,7 @@ const Content = () => {
           />
         </InputGroup>
         <Link className="btn-link" to={"/accounts/login"}>
-          <small>Login with credentials.</small>
+          <small>Login</small>
         </Link>
         <Button
           className="mt-5 mb-2"

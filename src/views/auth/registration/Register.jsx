@@ -34,7 +34,7 @@ const Register = () => {
         </h4>
         <p className="mb-5">
           Register with any personal or business email to unlock the power of
-          AI.
+          our freetools.
         </p>
         <InputGroup>
           <InputGroupAddon addonType="prepend">

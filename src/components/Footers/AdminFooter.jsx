@@ -12,7 +12,7 @@ const Footer = () => {
             © {new Date().getFullYear()}{" "}
             <a
               className="font-weight-bold ml-1"
-              href="https://imssystems.tech"
+              href="https://freetoolsapp.com"
               rel="noopener noreferrer"
               target="_blank"
             >

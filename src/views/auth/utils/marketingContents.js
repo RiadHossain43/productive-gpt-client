@@ -1,57 +1,57 @@
 export const marketingContents = [
   {
-    title: "Ensure Compliance with Ease",
+    title: "Accurate and Reliable Email Validation",
     contents:
-      "Ensure compliance with ease using our AI-powered compliance management system. Stay up-to-date with regulations and avoid costly penalties.",
+      "Validate email lists with our Email Validator software. Our advanced algorithms ensure accurate and reliable results.",
     imgSrc:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIQctMpfDaRxFb7YrryqRe1-2hK2r1getr-w&usqp=CAU",
   },
   {
-    title: "Simplify Policy Management",
+    title: "Cost-Effective Pricing",
     contents:
-      "Simplify policy management with our AI-powered platform. Create, update, and distribute policies with ease.",
+      "Validate email lists at a cheaper price with our Email Validator software. Get high-quality validation without breaking the bank.",
     imgSrc:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIQctMpfDaRxFb7YrryqRe1-2hK2r1getr-w&usqp=CAU",
   },
   {
-    title: "Optimise Your SOPs",
+    title: "Increase Email Deliverability",
     contents:
-      "Optimise your standard operating procedures with AI-powered analytics. Identify areas for improvement and streamline your processes.",
+      "Improve your email deliverability rates by removing invalid and risky email addresses using our Email Validator software.",
     imgSrc:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIQctMpfDaRxFb7YrryqRe1-2hK2r1getr-w&usqp=CAU",
   },
   {
-    title: "Revolutionise Your Marketing Strategy",
+    title: "Enhance Data Quality",
     contents:
-      "Revolutionise your marketing strategy with AI-powered insights. Unlock the power of AI to supercharge your marketing efforts.",
+      "Ensure your email lists are clean and up-to-date with our Email Validator software. Enhance the quality of your data effortlessly.",
     imgSrc:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIQctMpfDaRxFb7YrryqRe1-2hK2r1getr-w&usqp=CAU",
   },
   {
-    title: "Personalise Your Customer Experience",
+    title: "Easy Integration",
     contents:
-      "Personalise your customer experience with AI-driven recommendations. Deliver personalised content at scale with AI-powered marketing.",
+      "Seamlessly integrate our Email Validator software into your existing systems and workflows. Start validating emails with ease.",
     imgSrc:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIQctMpfDaRxFb7YrryqRe1-2hK2r1getr-w&usqp=CAU",
   },
   {
-    title: "Stay Ahead of the Competition",
+    title: "Bulk Email Validation",
     contents:
-      "Stay ahead of the competition with AI-powered marketing. Gain a competitive edge with AI-driven marketing strategies.",
+      "Efficiently validate large email lists in bulk with our Email Validator software. Save time and resources with our powerful solution.",
     imgSrc:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIQctMpfDaRxFb7YrryqRe1-2hK2r1getr-w&usqp=CAU",
   },
   {
-    title: "Enhance Your Customer Engagement",
+    title: "Real-Time Validation",
     contents:
-      "Enhance your customer engagement with AI-powered Alice. Improve your customer service with AI-driven technology.",
+      "Validate email addresses in real-time with our Email Validator software. Ensure accuracy and reliability on the fly.",
     imgSrc:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIQctMpfDaRxFb7YrryqRe1-2hK2r1getr-w&usqp=CAU",
   },
   {
-    title: "Drive Conversions with Alice",
+    title: "API Integration",
     contents:
-      "Drive conversions with AI-powered lead generation. Generate more leads with AI-driven marketing campaigns.",
+      "Integrate our Email Validator software into your applications and platforms using our robust API. Validate emails seamlessly.",
     imgSrc:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIQctMpfDaRxFb7YrryqRe1-2hK2r1getr-w&usqp=CAU",
   },

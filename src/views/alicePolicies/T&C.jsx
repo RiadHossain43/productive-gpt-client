@@ -3,7 +3,7 @@ import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 const tAndC = `
 ## Terms and Conditions
 
-These terms and conditions ("Agreement") govern your use of Alice software ("Software") provided by iMS Technologies ("Company"). By using the Software, you agree to be bound by this Agreement. If you do not agree to these terms and conditions, do not use the Software.
+These terms and conditions ("Agreement") govern your use of Alice software ("Software") provided by Freetools ("Company"). By using the Software, you agree to be bound by this Agreement. If you do not agree to these terms and conditions, do not use the Software.
 
 ### Subscription
 
@@ -19,11 +19,11 @@ You may renew your subscription at any time by paying the subscription fee as se
 
 ### Intellectual Property
 
-The Software and all intellectual property rights in the Software, including but not limited to patents, copyrights, trademarks, trade secrets, and any other proprietary rights, are owned by iMS Technologies. You may not copy, modify, distribute, sell, or transfer any part of the Software without the prior written consent of iMS Technologies.
-All rights, title, and interest in and to the Software, including all intellectual property rights, belong exclusively to iMS Technologies. You acknowledge that you have no rights, title, or interest in or to the Software except as expressly set forth in this Agreement.
+The Software and all intellectual property rights in the Software, including but not limited to patents, copyrights, trademarks, trade secrets, and any other proprietary rights, are owned by Freetools. You may not copy, modify, distribute, sell, or transfer any part of the Software without the prior written consent of Freetools.
+All rights, title, and interest in and to the Software, including all intellectual property rights, belong exclusively to Freetools. You acknowledge that you have no rights, title, or interest in or to the Software except as expressly set forth in this Agreement.
 You agree not to remove, obscure, or alter any proprietary rights notices (including copyright and trademark notices) that may be affixed to or contained within the Software.
-If you believe that any content or materials on the Software infringe your intellectual property rights, please contact iMS Technologies immediately.
-By using the Software, you acknowledge and agree that the IP of Alice belongs to iMS Technologies and that you have no rights, title, or interest in or to the Software except as expressly set forth in this Agreement.
+If you believe that any content or materials on the Software infringe your intellectual property rights, please contact Freetools immediately.
+By using the Software, you acknowledge and agree that the IP of Alice belongs to Freetools and that you have no rights, title, or interest in or to the Software except as expressly set forth in this Agreement.
 
 ### Machine Learning and AI
 
@@ -31,7 +31,7 @@ The Software may use machine learning and AI algorithms to provide certain featu
 Users must consent to the collection and use of their data for AI and machine learning purposes. By signing up to use Alice, users are automatically opted-in to the data collection and use. Users may opt-out of the data collection and use by cancelling their subscription.
 If users wish to opt-out of the data collection and use at any other time, they may contact the Company to request their data be removed from the machine learning and AI algorithms. However, please note that opting-out of the data collection and use may affect the functionality and features of the Software.
 The Company takes the privacy and security of user data seriously and will only use the data for the purposes of improving the machine learning and AI algorithms. The Company will not sell or share user data with third parties without the user's explicit consent.
-By using the Software, you agree to the collection and use of your data for AI and machine learning purposes as outlined in this Agreement. If you have any questions or concerns about the data collection and use, please contact iMS Technologies.
+By using the Software, you agree to the collection and use of your data for AI and machine learning purposes as outlined in this Agreement. If you have any questions or concerns about the data collection and use, please contact Freetools.
 
 ### Disclaimer of Warranties
 
@@ -44,7 +44,7 @@ In no event shall the Company be liable for any direct, indirect, incidental, sp
 ### Governing Law
 
 This Agreement shall be governed by and construed in accordance with the laws of [country name]. Any dispute arising out of or in connection with this Agreement shall be resolved by arbitration in accordance with the rules of the [arbitration association name].
-By using the Software, you agree to be bound by this Agreement. If you have any questions about this Agreement, please contact iMS Technologies.
+By using the Software, you agree to be bound by this Agreement. If you have any questions about this Agreement, please contact Freetools.
 `;
 const TAndC = () => {
   return (

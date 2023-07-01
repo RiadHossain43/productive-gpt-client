@@ -1,11 +1,11 @@
 import { Col, Container, Row } from "reactstrap";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 const privacyPolicy = `
-## iMS Technologies Privacy Policy
+## Freetools Privacy Policy
 
 ### Introduction
 
-At iMS Technologies, we are committed to protecting the privacy of our users. This Privacy Policy outlines the types of personal information we collect, how we use it, and how we protect it.
+At Freetools, we are committed to protecting the privacy of our users. This Privacy Policy outlines the types of personal information we collect, how we use it, and how we protect it.
 
 ### Information We Collect
 
