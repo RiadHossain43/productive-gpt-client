@@ -37,19 +37,8 @@ export async function streamResponse(
         const { value, done } = await reader.read();
         if (done) break;
         const decodedtext = new TextDecoder("utf-8").decode(value);
-        const jsonChunks = decodedtext.split("data: ");
-        for (let chunk of jsonChunks) {
-          if (chunk) {
-            if (chunk.trim() === "[DONE]") break;
-            // console.log(chunk)
-            let dataobject = JSON.parse(chunk);
-            if (dataobject.choices[0].delta.content) {
-              // console.log(fullText);
-              fullText += dataobject.choices[0].delta.content;
-              options?.onStream(dataobject.choices[0].delta.content);
-            }
-          }
-        }
+        fullText += decodedtext;
+        options?.onStream(decodedtext);
       } catch (err) {
         console.log(err);
       }

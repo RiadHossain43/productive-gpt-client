@@ -6,7 +6,7 @@ import "react-toastify/dist/ReactToastify.css";
 import AuthLayout from "./layouts/auth/Index";
 import GlobalErrorBoundary from "./layouts/error/Index";
 import GeneralLayout from "./layouts/general/Index";
-// import MainLayout from "./layouts/main/Index";
+import MainLayout from "./layouts/main/Index";
 import SettingsLayout from "./layouts/settings/Index";
 import routes from "./routes";
 import { useApplication } from "./stores/applicationStore";
@@ -29,10 +29,10 @@ export default function App() {
         ...routes.authLayout.alicePolicies,
       ],
     },
-    // {
-    //   element: <MainLayout navigation={[...routes.mainLayout.chat]} />,
-    //   children: [...routes.mainLayout.chat],
-    // },
+    {
+      element: <MainLayout navigation={[...routes.mainLayout.chat]} />,
+      children: [...routes.mainLayout.chat],
+    },
     {
       element: (
         <GeneralLayout
