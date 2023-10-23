@@ -81,6 +81,7 @@ $asset-base-path: "../../../../assets" !default;
 @import "app/custom/vendor/plugin-animate-bootstrap-notify.scss";
 @import "app/custom/vendor/plugin-bootstrap-switch.scss";
 @import "app/custom/vendor/plugin-nouislider.scss";
+@import "app/custom/vendor/plugin-dropzone.scss";
 @import "app/custom/vendor/plugin-datetimepicker.scss";
 
 // Cards
@@ -99,7 +100,7 @@ $asset-base-path: "../../../../assets" !default;
 
 @import "app/react/react-differences";
 
-// views 
+// views
 @import "app/views/auth_layout";
 @import "app/views/main_layout";
 @import "app/views/settings_layout";
@@ -108,4 +109,4 @@ $asset-base-path: "../../../../assets" !default;
 @import "app/views/document_editor";
 @import "app/views/payments";
 @import "app/views/misc";
-@import "app/views/uploaders"
+@import "app/views/uploaders";

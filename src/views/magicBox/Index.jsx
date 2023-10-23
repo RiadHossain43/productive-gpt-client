@@ -1,42 +1,36 @@
 import React from "react";
-import { BsChat } from "react-icons/bs";
 import { Link } from "react-router-dom";
-import { Container, Nav, NavItem, NavLink } from "reactstrap";
-
+import { BsBarChart } from "react-icons/bs";
+import { FiEdit3, FiSettings } from "react-icons/fi";
+import { PiChatTeardropDots } from "react-icons/pi";
 const MagicBox = ({}) => {
   return (
-    <Container className="py-5">
-      <Nav
-        className="nav-pills-primary nav-pills-icons justify-content-center align-items-center"
-        pills
-        role="tablist"
-      >
-        <NavItem>
-          <Link to={"/chat"}>
-            <NavLink href="#pablo">
-              <i className="tim-icons icon-laptop" />
-              Conversation
-            </NavLink>
-          </Link>
-        </NavItem>
-        <NavItem>
-          <Link to={"/accounts/settings"}>
-            <NavLink href="#pablo">
-              <i className="tim-icons icon-settings-gear-63" />
-              Settings
-            </NavLink>
-          </Link>
-        </NavItem>
-        <NavItem>
-          <Link to="/image-galary">
-            <NavLink href="#pablo">
-              <i className="tim-icons icon-image-02" />
-              Image generation
-            </NavLink>
-          </Link>
-        </NavItem>
-      </Nav>
-    </Container>
+    <div className="home">
+      <Link to={"/chat"}>
+        <div className="app">
+          <PiChatTeardropDots />
+          Conversation
+        </div>
+      </Link>
+      <Link to={"/chat"}>
+        <div className="app">
+          <FiEdit3 />
+          Content editor
+        </div>
+      </Link>
+      <Link to={"/accounts/settings"}>
+        <div className="app">
+          <FiSettings />
+          Settings
+        </div>
+      </Link>
+      <Link to="/data-analysis">
+        <div className="app">
+          <BsBarChart />
+          Data analysis
+        </div>
+      </Link>
+    </div>
   );
 };
 

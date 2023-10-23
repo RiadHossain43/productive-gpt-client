@@ -6,7 +6,7 @@ import payment from "./views/payment/routes";
 import settings from "./views/settings/routes";
 import alicePolicies from "./views/alicePolicies/routes";
 import magicBox from "./views/magicBox/routes";
-import imageGalary from "./views/imageGalary/routes"
+import dataAnalysis from "./views/dataAnalysis/routes";
 
 var routes = {
   authLayout: {
@@ -24,7 +24,7 @@ var routes = {
   generalLayout: {
     lab,
     magicBox,
-    imageGalary
+    dataAnalysis,
   },
 };
 export default routes;

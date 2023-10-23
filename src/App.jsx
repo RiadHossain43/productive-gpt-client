@@ -39,14 +39,14 @@ export default function App() {
           navigation={[
             ...routes.generalLayout.lab,
             ...routes.generalLayout.magicBox,
-            ...routes.generalLayout.imageGalary,
+            ...routes.generalLayout.dataAnalysis,
           ]}
         />
       ),
       children: [
         ...routes.generalLayout.lab,
         ...routes.generalLayout.magicBox,
-        ...routes.generalLayout.imageGalary,
+        ...routes.generalLayout.dataAnalysis,
       ],
     },
     {
