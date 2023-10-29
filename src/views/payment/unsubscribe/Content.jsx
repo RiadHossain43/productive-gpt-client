@@ -14,7 +14,7 @@ const Content = () => {
         <img className="login-alice-logo mb-4" src={logo} />
         <h4 className="">Premium customer.</h4>
         <p className="mb-5">
-          You are already a premium customer of Alice. In can case you are
+          You are already a premium customer of AI_PRODUCT_NAME. In can case you are
           looking to cancel your subsciption you can follow the link bellow.
         </p>
         <Link className="btn-link" to={"/chats"}>

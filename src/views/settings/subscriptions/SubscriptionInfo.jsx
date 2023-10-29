@@ -7,7 +7,7 @@ import { useApplication } from "../../../stores/applicationStore";
 const UI_MESSAGE = {
   Free: `You are running on the free subscription.`,
   Subscribed: `You are currently on the premium subscription.`,
-  Unsubscribed: `Your subscription has been canceled. To continue using Alice
+  Unsubscribed: `Your subscription has been canceled. To continue using AI_PRODUCT_NAME
   please upgrade your account to premium.`,
 };
 const SubscriptionInfo = () => {

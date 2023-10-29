@@ -16,7 +16,7 @@ export const steps = [
   },
   {
     target: "#chat-input",
-    title: "Prompt Alice",
+    title: "Prompt AI_PRODUCT_NAME",
     content: `
     This is where you engange with me, prompting me on how I can support you.
     `,

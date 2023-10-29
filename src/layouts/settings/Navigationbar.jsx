@@ -2,7 +2,7 @@ import { Link, useNavigate } from "react-router-dom";
 // reactstrap components
 import { Nav, Navbar } from "reactstrap";
 import React from "react";
-import { BsArrowLeft } from "react-icons/bs";
+import { MdApps } from "react-icons/md";
 import { HiMenuAlt2 } from "react-icons/hi";
 import { useProSidebar } from "react-pro-sidebar";
 import { useApplication } from "../../stores/applicationStore";
@@ -26,9 +26,11 @@ const Navigationbar = ({}) => {
           <HiMenuAlt2 />
         </div>
         <div className="ml-auto">
-          <Link to={"/chats"}>
-            <p>
-              <BsArrowLeft /> Back to conversations
+          <Link to="/magic-box">
+            <p className="py-1 text-warning mx-2">
+              <span className="text-primary">
+                <MdApps /> Apps
+              </span>
             </p>
           </Link>
         </div>

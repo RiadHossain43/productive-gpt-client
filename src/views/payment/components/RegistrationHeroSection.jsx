@@ -14,7 +14,7 @@ const RegistrationHeroSection = ({}) => {
           Freetools
         </Link>
       </small>
-      <h2 className="mb-md-2 mb-lg-4">Start your journey with Alice</h2>
+      <h2 className="mb-md-2 mb-lg-4">Start your journey with AI_PRODUCT_NAME</h2>
       <p>
         Introducing A.L.I.C.E (Artificial, Intelligence, Leared, Complaince,
         Expert): Your AI Companion. Get instant access to a wealth of knowledge

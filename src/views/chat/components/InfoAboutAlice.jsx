@@ -8,14 +8,14 @@ import useDualStateController from "../../../hooks/useDualStateController";
 const naratives = `
 ## **Version:** v1.0.1 (June 19, 2023)
 
-Alice the AI bot was created with the aim of helping individuals and businesses stay compliant with ISO and regulatory standards.
+AI_PRODUCT_NAME the AI bot was created with the aim of helping individuals and businesses stay compliant with ISO and regulatory standards.
 Compliance with these standards is crucial for businesses to operate efficiently and effectively,
 with failure to comply potentially resulting in significant financial and reputational damage.
-Alice the AI bot can help businesses reduce the time taken to create policies and processes,
+AI_PRODUCT_NAME the AI bot can help businesses reduce the time taken to create policies and processes,
 as well as the time taken to complete tasks. This is achieved through the use of advanced machine learning algorithms 
-that enable Alice to learn from past interactions and provide personalised reccomandations to users.
-By automating compliance related tasks, Alice the AI bot can help businesses save time and resources,
-allowing them to focus on their core business activities. Overall, Alice the AI bot is a powerful tool
+that enable AI_PRODUCT_NAME to learn from past interactions and provide personalised reccomandations to users.
+By automating compliance related tasks, AI_PRODUCT_NAME the AI bot can help businesses save time and resources,
+allowing them to focus on their core business activities. Overall, AI_PRODUCT_NAME the AI bot is a powerful tool
 that helps businesses stay compliant, reduce costs and improve operational efficiency.
 
 ## Enhancement pipeline

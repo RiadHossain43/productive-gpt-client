@@ -44,12 +44,12 @@ export const marketingContents = [
   {
     title: "Enhance Your Customer Engagement",
     contents:
-      "Enhance your customer engagement with AI-powered Alice. Improve your customer service with AI-driven technology.",
+      "Enhance your customer engagement with AI-powered AI_PRODUCT_NAME. Improve your customer service with AI-driven technology.",
     imgSrc:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIQctMpfDaRxFb7YrryqRe1-2hK2r1getr-w&usqp=CAU",
   },
   {
-    title: "Drive Conversions with Alice",
+    title: "Drive Conversions with AI_PRODUCT_NAME",
     contents:
       "Drive conversions with AI-powered lead generation. Generate more leads with AI-driven marketing campaigns.",
     imgSrc:

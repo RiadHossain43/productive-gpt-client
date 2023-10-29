@@ -35,7 +35,7 @@ const Content = ({ onSubmit }) => {
         <img className="login-alice-logo mb-4" src={logo} />
         <h4 className="">Payment details!</h4>
         <p className="mb-5">
-          Subscribe to Alice - Enterprice{" "}
+          Subscribe to AI_PRODUCT_NAME - Enterprice{" "}
           <span className="text-dark">£20.00</span>/<sub>month</sub>
         </p>
         <InputGroup>

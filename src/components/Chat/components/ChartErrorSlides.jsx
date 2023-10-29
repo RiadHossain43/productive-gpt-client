@@ -12,9 +12,9 @@ const ChatErrorSlides = ({}) => {
       <Card className="rounded-3">
         <CardBody>
           <p className="white-space-prewrap">
-            Alice could not produce your requested chart:
+            AI_PRODUCT_NAME could not produce your requested chart:
             <small>
-              Alice has been trained to build certain charts at this present
+              AI_PRODUCT_NAME has been trained to build certain charts at this present
               moment. i.e. Flowchart, Sequence Diagram, Class Diagram, State
               Diagram, Entity Relationship Diagram, User Journey, Gantt, Pie
               Chart, Requirement Diagram, Gitgraph, (Git) Diagram, C4C Diagram

@@ -4,9 +4,9 @@ import logo from "../../../assets/img/brand/logo-ai.png";
 import { useApplication } from "../../../stores/applicationStore";
 
 const UI_MESSAGE = {
-  runningTrial: `You are currently on your trial period. To continue using Alice after your trial
+  runningTrial: `You are currently on your trial period. To continue using AI_PRODUCT_NAME after your trial
   period please upgrade to premium.`,
-  trialEnd: `Your trial period has ended. To continue using Alice please upgrade your account 
+  trialEnd: `Your trial period has ended. To continue using AI_PRODUCT_NAME please upgrade your account 
   to premium and follow instructions.`,
 };
 const SubscriptionInfo = () => {

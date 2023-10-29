@@ -11,7 +11,7 @@ const Content = () => {
               <img className="login-alice-logo mb-4" src={logo} />
               <h4 className="">Payment successful!</h4>
               <p className="mb-5">
-                <Spinner size="sm" /> Thanks for your subscription to Alice.
+                <Spinner size="sm" /> Thanks for your subscription to AI_PRODUCT_NAME.
               </p>
             </div>
           </Col>
