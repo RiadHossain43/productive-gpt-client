@@ -11,12 +11,12 @@
     transform: translateY(-50%);
   }
 
-  .login-alice-promo-container,
-  .registration-alice-promo-container {
+  .login-productiveai-promo-container,
+  .registration-productiveai-promo-container {
     background-position: bottom;
     background-size: contain;
   }
-  .login-alice-promo-container {
+  .login-productiveai-promo-container {
     background-image: linear-gradient(
         to bottom,
         rgba($body-bg, 0.95),
@@ -24,7 +24,7 @@
       ),
       url("../../../img/theme/login-promo-bg.jpg");
   }
-  .login-alice-logo {
+  .login-productiveai-logo {
     width: 80%;
   }
   .login-hero-section {
@@ -40,7 +40,7 @@
       // color: $secondary-light;
     }
   }
-  .login-alice-promo-slider {
+  .login-productiveai-promo-slider {
     height: 170px;
     .swiper {
       width: 80%;
@@ -66,7 +66,7 @@
       }
     }
   }
-  .registration-alice-promo-container {
+  .registration-productiveai-promo-container {
     background-image: linear-gradient(
         to bottom,
         rgba($black, 0.6),

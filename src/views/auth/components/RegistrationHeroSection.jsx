@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import MarkDown from "../../../components/MarkDown/MarkDown";
 const RegistrationHeroSection = ({}) => {
   return (
     <React.Fragment>
@@ -14,16 +15,24 @@ const RegistrationHeroSection = ({}) => {
           Freetools
         </Link>
       </small>
-      <h2 className="mb-md-2 mb-lg-4">Start your journey with us.</h2>
-      <p>
-        Embark on a seamless email marketing journey with our cutting-edge
-        software. Whether you're a small business owner or a seasoned marketer,
-        our email validation software is designed to empower you. Say goodbye to
-        wasted resources and hello to a higher ROI. Join thousands of satisfied
-        customers who have experienced the power of accurate email lists. Start
-        your journey with us today and unlock the full potential of your email
-        campaigns.
-      </p>
+      <h2 className="mb-md-2 mb-lg-4">Start Your Journey with Us</h2>
+
+      <MarkDown
+        markdown={`
+Embrace the future of productivity and efficiency with Free Tools AI. We're your trusted companion on the road to success. Dive into a world of innovation and discover how our cutting-edge tools can transform the way you work:
+
+📊 **Data Analysis**: Crunch numbers, extract insights, and make data-driven decisions effortlessly.
+
+📈 **Diagram Making**: Create stunning visuals and diagrams that convey your ideas with precision and style.
+
+✍️ **Document Editing**: Edit, review, and perfect your documents with intuitive features and collaboration capabilities.
+
+🔧 **And More**: Explore a wide array of tools and capabilities to unlock your potential and enhance your work.
+
+Don't wait – take the first step towards a more productive future. Start your journey with Free Tools AI today and experience the difference! 💡
+      
+`}
+      />
     </React.Fragment>
   );
 };

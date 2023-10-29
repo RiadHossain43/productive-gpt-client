@@ -9,7 +9,7 @@ const Content = () => {
   return (
     <PageLayout>
       <div className="login-form">
-        <img className="login-alice-logo mb-4" src={logo} />
+        <img className="login-productiveai-logo mb-4" src={logo} />
         <h4 className="">See you soon!</h4>
         <p className="mb-5">
           <Spinner size="sm" /> We are safely logging you out.

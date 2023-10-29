@@ -8,7 +8,7 @@ const Content = () => {
         <Row>
           <Col md="4" className="mx-auto mt-5">
             <div className="">
-              <img className="login-alice-logo mb-4" src={logo} />
+              <img className="login-productiveai-logo mb-4" src={logo} />
               <h4 className="">Payment successful!</h4>
               <p className="mb-5">
                 <Spinner size="sm" /> Thanks for your subscription to AI_PRODUCT_NAME.

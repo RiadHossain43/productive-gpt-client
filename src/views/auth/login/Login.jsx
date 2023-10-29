@@ -26,7 +26,7 @@ const Login = () => {
   return (
     <PageLayout>
       <div className="login-form">
-        <img className="login-alice-logo mb-4" src={logo} />
+        <img className="login-productiveai-logo mb-4" src={logo} />
         <h4 className="">Welcome!</h4>
         <p className="mb-5">
           Boost your business efficiency with our freetools.

@@ -17,7 +17,7 @@ import useError from "../../../../hooks/error";
  * @typedef {Object} Conversation
  * @property {String} _id  - Id of the pair.
  * @property {String} userPrompt - The prompt user used to generate an answer.
- * @property {String} aliceResponse - Text response from alice the bot.
+ * @property {String} aliceResponse - Text response from the bot.
  * @property {String} time - time or how long ago.
  * @property {Boolean} isViewd - This indicates wheather a message is viewed of not. Usefull for typing response.
  * @property {Object} reaction - This is the reaction

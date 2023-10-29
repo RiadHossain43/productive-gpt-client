@@ -32,7 +32,7 @@ const Content = ({ onSubmit }) => {
   return (
     <PageLayout>
       <div className="y-centered payment-form">
-        <img className="login-alice-logo mb-4" src={logo} />
+        <img className="login-productiveai-logo mb-4" src={logo} />
         <h4 className="">Payment details!</h4>
         <p className="mb-5">
           Subscribe to AI_PRODUCT_NAME - Enterprice{" "}

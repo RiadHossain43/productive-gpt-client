@@ -77,7 +77,7 @@ const Layout = (props) => {
               }}
             >
               <div className="d-flex align-items-center justify-content-center">
-                <img className="login-alice-logo mx-auto mb-3" src={logo} />
+                <img className="login-productiveai-logo mx-auto mb-3" src={logo} />
               </div>
               <Button
                 id="new-chat-button"

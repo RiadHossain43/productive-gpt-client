@@ -11,7 +11,7 @@ const Content = () => {
   return (
     <PageLayout>
       <div className="login-form">
-        <img className="login-alice-logo mb-4" src={logo} />
+        <img className="login-productiveai-logo mb-4" src={logo} />
         <h4 className="">Premium customer.</h4>
         <p className="mb-5">
           You are already a premium customer of AI_PRODUCT_NAME. In can case you are

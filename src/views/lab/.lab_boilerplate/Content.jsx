@@ -6,7 +6,7 @@ const Content = () => {
   const {} = useHook();
   return (
     <div className="login-form">
-      <img className="login-alice-logo mb-4" src={logo} />
+      <img className="login-productiveai-logo mb-4" src={logo} />
       <h4 className="">Welcome to lab!</h4>
       <p className="mb-5">
         <Spinner size="sm" /> Let's start a new project.

@@ -1,57 +1,71 @@
 export const marketingContents = [
   {
-    title: "Accurate and Reliable Email Validation",
+    title: "Transform Data Analysis",
     contents:
-      "Validate email lists with our Email Validator software. Our advanced algorithms ensure accurate and reliable results.",
+      "Elevate your data analysis with AI-powered automation. Uncover insights and generate charts effortlessly.",
     imgSrc:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIQctMpfDaRxFb7YrryqRe1-2hK2r1getr-w&usqp=CAU",
   },
   {
-    title: "Cost-Effective Pricing",
+    title: "AI-Driven Chart Generation",
     contents:
-      "Validate email lists at a cheaper price with our Email Validator software. Get high-quality validation without breaking the bank.",
+      "Simplify chart creation with our AI toolkit. Turn data into visual insights with speed and accuracy.",
     imgSrc:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIQctMpfDaRxFb7YrryqRe1-2hK2r1getr-w&usqp=CAU",
   },
   {
-    title: "Increase Email Deliverability",
+    title: "Efficiency Redefined",
     contents:
-      "Improve your email deliverability rates by removing invalid and risky email addresses using our Email Validator software.",
+      "Streamline data analysis and chart generation. Experience productivity like never before.",
     imgSrc:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIQctMpfDaRxFb7YrryqRe1-2hK2r1getr-w&usqp=CAU",
   },
   {
-    title: "Enhance Data Quality",
+    title: "Content Editing Revolution",
     contents:
-      "Ensure your email lists are clean and up-to-date with our Email Validator software. Enhance the quality of your data effortlessly.",
+      "Experience the future of content editing. Our AI tool enhances your writing and editing process.",
     imgSrc:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIQctMpfDaRxFb7YrryqRe1-2hK2r1getr-w&usqp=CAU",
   },
   {
-    title: "Easy Integration",
+    title: "Automated Writing Assistance",
     contents:
-      "Seamlessly integrate our Email Validator software into your existing systems and workflows. Start validating emails with ease.",
+      "Effortlessly create content with AI support. Write, edit, and perfect documents with ease.",
     imgSrc:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIQctMpfDaRxFb7YrryqRe1-2hK2r1getr-w&usqp=CAU",
   },
   {
-    title: "Bulk Email Validation",
+    title: "Enhance Your Writing",
     contents:
-      "Efficiently validate large email lists in bulk with our Email Validator software. Save time and resources with our powerful solution.",
+      "Elevate your writing game with AI-driven assistance. Unleash your creativity and save time.",
     imgSrc:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIQctMpfDaRxFb7YrryqRe1-2hK2r1getr-w&usqp=CAU",
   },
   {
-    title: "Real-Time Validation",
+    title: "Collaborate on Challenges",
     contents:
-      "Validate email addresses in real-time with our Email Validator software. Ensure accuracy and reliability on the fly.",
+      "Facilitate productive discussions with our platform. Tackle problems as a team.",
     imgSrc:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIQctMpfDaRxFb7YrryqRe1-2hK2r1getr-w&usqp=CAU",
   },
   {
-    title: "API Integration",
+    title: "AI-Powered Solutions",
     contents:
-      "Integrate our Email Validator software into your applications and platforms using our robust API. Validate emails seamlessly.",
+      "Leverage AI to address complex issues. Explore innovative problem-solving tools.",
+    imgSrc:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIQctMpfDaRxFb7YrryqRe1-2hK2r1getr-w&usqp=CAU",
+  },
+  {
+    title: "Problem-Solving Made Easy",
+    contents:
+      "Simplify the process of identifying and resolving challenges. Collaborate efficiently with AI.",
+    imgSrc:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIQctMpfDaRxFb7YrryqRe1-2hK2r1getr-w&usqp=CAU",
+  },
+  {
+    title: "Join the Discussion",
+    contents:
+      "Engage in meaningful conversations about your projects. Uncover solutions together.",
     imgSrc:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIQctMpfDaRxFb7YrryqRe1-2hK2r1getr-w&usqp=CAU",
   },

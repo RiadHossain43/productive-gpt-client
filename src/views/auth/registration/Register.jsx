@@ -28,7 +28,7 @@ const Register = () => {
   return (
     <PageLayout varient="sign-up">
       <div className="login-form">
-        <img className="login-alice-logo mb-4" src={logo} />
+        <img className="login-productiveai-logo mb-4" src={logo} />
         <h4 className="">
           <MdOutlineAutoFixHigh /> Get Started!
         </h4>

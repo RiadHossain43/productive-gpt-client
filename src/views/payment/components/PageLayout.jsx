@@ -31,8 +31,8 @@ const PageLayout = ({
           className={classNames(
             "py-4  rounded-3 overflow-hidden d-none d-md-flex flex-column",
             {
-              "registration-alice-promo-container": varient === varients.signup,
-              "login-alice-promo-container": varient === varients.signin,
+              "registration-productiveai-promo-container": varient === varients.signup,
+              "login-productiveai-promo-container": varient === varients.signin,
             }
           )}
           md={4}
@@ -41,7 +41,7 @@ const PageLayout = ({
             {varient === varients.signup && <RegistrationHeroSection />}
             {varient === varients.signin && <LoginHeroSection />}
           </div>
-          <div className="login-alice-promo-slider">
+          <div className="login-productiveai-promo-slider">
             <MarketingSlides />
           </div>
         </Col>

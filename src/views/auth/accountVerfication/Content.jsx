@@ -12,7 +12,7 @@ const Content = () => {
   return (
     <PageLayout varient="sign-up">
       <div className="login-form">
-        <img className="login-alice-logo mb-4" src={logo} />
+        <img className="login-productiveai-logo mb-4" src={logo} />
         <h4 className="">Almost there!</h4>
         <p className="mb-5">
           You are just a step away from unleashing the power of freetools.

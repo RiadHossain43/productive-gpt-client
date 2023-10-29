@@ -19,7 +19,7 @@ const SubscriptionInfo = () => {
         <Row>
           <Col md="4" className="mx-auto mt-5">
             <div className="">
-              <img className="login-alice-logo mb-4" src={logo} />
+              <img className="login-productiveai-logo mb-4" src={logo} />
               <h4 className="">Manage subscription</h4>
               <p className="mb-5">
                 {UI_MESSAGE[currentUserData?.subscriptionInformation?.status]}

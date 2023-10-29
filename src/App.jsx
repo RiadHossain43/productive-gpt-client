@@ -26,7 +26,7 @@ export default function App() {
         ...routes.authLayout.auth,
         ...routes.authLayout.payment,
         ...routes.authLayout.fallback,
-        ...routes.authLayout.alicePolicies,
+        ...routes.authLayout.termsPolicies,
       ],
     },
     // {

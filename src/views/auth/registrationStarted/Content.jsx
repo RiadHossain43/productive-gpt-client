@@ -15,7 +15,7 @@ const Content = () => {
   return (
     <PageLayout varient="sign-up">
       <div className="login-form">
-        <img className="login-alice-logo mb-4" src={logo} />
+        <img className="login-productiveai-logo mb-4" src={logo} />
         <h4 className="">Email verification!</h4>
         <p className="mb-5">
           We have sent a verification email to {currentUserData?.email}. Please
