@@ -107,12 +107,12 @@ bold enough to catch on the eye and grid line colors are #344675
   }, [chartStream]);
 
   useEffect(() => {
-    chartStreamer({
-      prompt:
-        "Suggest some usefull analytics on this dataset",
-      conversation: [],
-      systemInstructions: systemInstructions,
-    });
+    if (dataset.length)
+      chartStreamer({
+        prompt: "Suggest some usefull analytics on this dataset",
+        conversation: [],
+        systemInstructions: systemInstructions,
+      });
   }, [dataset]);
 
   return (
