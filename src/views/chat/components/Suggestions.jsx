@@ -11,11 +11,10 @@ const Suggestions = () => {
       <Row className="mt-5">
         <Col md="8" className="mx-auto mt-4">
           <UncontrolledAlert color="primary">
-            *Please click on the tiles below and read carefully to understand my
-            capabilities and limitations.*
+            *I am your day to day chat AI assistant. Ask me anything for help.*
           </UncontrolledAlert>
         </Col>
-        <Col id="chat-suggestions" md={8} className="mx-auto">
+        {/* <Col id="chat-suggestions" md={8} className="mx-auto">
           <Row>
             {Object.keys(DEFAULT_PROMPTS)
               .filter((key) => key !== "DEFAULT")
@@ -31,7 +30,7 @@ const Suggestions = () => {
               })}
             <InfoAboutAlice />
           </Row>
-        </Col>
+        </Col> */}
       </Row>
     </Container>
   );

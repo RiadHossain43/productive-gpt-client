@@ -2,8 +2,9 @@
 // Design element Dialogs
 // --------------------------------------------------
 .modal-content {
-  border: 0;
-
+  border: 1px solid $primary;
+  border-radius: $border-radius-sm;
+  
   // Modal header
   // Top section of the modal w/ title and dismiss
 
@@ -78,8 +79,6 @@
   .modal-body {
     line-height: 1.9;
     background-color: $card-black-background;
-    border: 1px solid $primary;
-    border-radius: $border-radius-sm;
 
     p {
       // color: $black;
@@ -102,7 +101,7 @@
     border-top: 0;
     -webkit-justify-content: space-between; /* Safari 6.1+ */
     justify-content: space-between;
-
+    background-color: $card-black-background;
     button {
       margin: 0;
       padding-left: 16px;

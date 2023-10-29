@@ -127,7 +127,7 @@ export default function useStore(config) {
        * if so we should redirect them to new-chat because this chat is just deleted.
        */
       if (activeChathead?._id === id || !params?.chatheadId)
-        navigate("/new-chat");
+        navigate("/new-chat-redirect");
       _dispatch({
         [USER_ACTIONS.DELETE_CHATHEAD]: {
           status: false,

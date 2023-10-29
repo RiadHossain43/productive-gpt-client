@@ -7,7 +7,7 @@ export default function usePayment() {
   async function redirectToCheckout({ userEmail }) {
     try {
       const item = {
-        price: process.env.REACT_APP_STRIPE_ALICE_PRICE,
+        price: process.env.REACT_APP_STRIPE_PRODUCT_PRICE,
         quantity: 1,
       };
       const checkoutOptions = {
