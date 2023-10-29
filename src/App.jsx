@@ -29,22 +29,20 @@ export default function App() {
         ...routes.authLayout.alicePolicies,
       ],
     },
-    {
-      element: <MainLayout navigation={[...routes.mainLayout.chat]} />,
-      children: [...routes.mainLayout.chat],
-    },
+    // {
+    //   element: <MainLayout navigation={[...routes.mainLayout.chat]} />,
+    //   children: [...routes.mainLayout.chat],
+    // },
     {
       element: (
         <GeneralLayout
           navigation={[
-            ...routes.generalLayout.lab,
             ...routes.generalLayout.magicBox,
             ...routes.generalLayout.dataAnalysis,
           ]}
         />
       ),
       children: [
-        ...routes.generalLayout.lab,
         ...routes.generalLayout.magicBox,
         ...routes.generalLayout.dataAnalysis,
       ],
