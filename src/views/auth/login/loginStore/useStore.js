@@ -28,7 +28,7 @@ export default function useStore(config) {
         refreshToken: data.details?.refreshToken,
       });
       navigate(
-        `/accounts/auth-success?user_id=${data.details.user._id}&redirect=/chat`
+        `/accounts/auth-success?user_id=${data.details.user._id}&redirect=/magic-box`
       );
       _dispatch({
         [USER_ACTIONS.LOGIN]: {
