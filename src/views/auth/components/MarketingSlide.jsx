@@ -1,7 +1,7 @@
 import { Card, CardBody } from "reactstrap";
 const MarketingSlide = ({ contents, title, imgSrc }) => {
   return (
-    <Card className="h-100 rounded-3">
+    <Card className="h-100 rounded-lg border border-info">
       <CardBody className="d-flex flex-column">
         <p className="flex-grow-1">
           <small>{contents}</small>

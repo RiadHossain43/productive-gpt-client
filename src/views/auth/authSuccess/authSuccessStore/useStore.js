@@ -15,7 +15,7 @@ export default function useStore(config) {
   let navigate = useNavigate();
   async function cacheData() {
     await refreshCache();
-    navigate(redirect);
+    navigate(redirect || "/");
   }
   useEffect(() => {
     cacheData();

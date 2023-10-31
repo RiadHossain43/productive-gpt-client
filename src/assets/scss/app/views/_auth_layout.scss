@@ -17,12 +17,12 @@
     background-size: contain;
   }
   .login-productiveai-promo-container {
-    background-image: linear-gradient(
-        to bottom,
-        rgba($body-bg, 0.95),
-        rgba($gray-900, 0.7)
-      ),
-      url("../../../img/theme/login-promo-bg.jpg");
+    // background-image: linear-gradient(
+    //     to bottom,
+    //     rgba($body-bg, 0.95),
+    //     rgba($gray-900, 0.7)
+    //   ),
+    //   url("../../../img/theme/login-promo-bg.jpg");
   }
   .login-productiveai-logo {
     width: 80%;
@@ -59,7 +59,7 @@
     }
     .card {
       border: 0;
-      background-color: rgba($black, 0.6);
+      background-color: rgba($card-black-background, 1);
       // color: $secondary-light;
       p {
         // color: $secondary-light;
@@ -67,11 +67,11 @@
     }
   }
   .registration-productiveai-promo-container {
-    background-image: linear-gradient(
-        to bottom,
-        rgba($black, 0.6),
-        rgba($gray-900, 0.7)
-      ),
-      url("../../../img/theme/login-promo-bg.jpg");
+    // background-image: linear-gradient(
+    //     to bottom,
+    //     rgba($black, 0.6),
+    //     rgba($gray-900, 0.7)
+    //   ),
+    //   url("../../../img/theme/login-promo-bg.jpg");
   }
 }
