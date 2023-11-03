@@ -59,10 +59,8 @@
     }
     .card {
       border: 0;
-      background-color: rgba($card-black-background, 1);
-      // color: $secondary-light;
+      background-color: $body-bg;
       p {
-        // color: $secondary-light;
       }
     }
   }
