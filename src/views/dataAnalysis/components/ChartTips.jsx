@@ -3,7 +3,7 @@ import { BsBarChart } from "react-icons/bs";
 import { Card, UncontrolledAlert } from "reactstrap";
 const ChartTips = ({ injectedCode = " " }) => {
   return (
-    <div className="w-100 h-100 p-2 px-md-3 pb-md-3">
+    <div className="w-100 h-100 p-2 px-md-3 pb-md-3 pt-0">
       <Card className="w-100 h-100 d-flex justify-content-center align-items-center">
         <div className="inline-block w-75 w-md-50">
           <h1 className="">
