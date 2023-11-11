@@ -1,8 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { BsBarChart } from "react-icons/bs";
+import { BsBarChart, BsDiagram3 } from "react-icons/bs";
 import { FiEdit3, FiSettings } from "react-icons/fi";
-import { PiChatTeardropDots } from "react-icons/pi";
+import { Link } from "react-router-dom";
 const MagicBox = ({}) => {
   return (
     <div className="home">
@@ -20,8 +19,8 @@ const MagicBox = ({}) => {
       </Link>
       <Link to={"#"}>
         <div className="app">
-          <PiChatTeardropDots />
-          Conversation (Comming soon...)
+          <BsDiagram3 />
+          Diagram (Comming soon...)
         </div>
       </Link>
       <Link to={"#"}>

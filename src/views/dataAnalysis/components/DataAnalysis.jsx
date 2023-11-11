@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Button, FormGroup, Input } from "reactstrap";
+import { Button, FormGroup, Input, UncontrolledAlert } from "reactstrap";
 import DropZone from "../../../components/Dropzone/Index";
 import useGPTResponseGenerator from "../../../hooks/useGPTResponseGenerator";
 import ChartCompiler from "./ChartCompiler";
@@ -8,6 +8,9 @@ import MDFormatedResponse from "../../../components/Chat/MDFormatedResponse";
 import Papa from "papaparse";
 import { TbAnalyzeFilled, TbDatabaseImport } from "react-icons/tb";
 import { MdOutlineSelectAll } from "react-icons/md";
+import ChartTips from "./ChartTips";
+import { MdOutlineTipsAndUpdates } from "react-icons/md";
+import { BsStop } from "react-icons/bs";
 function extractCodeFromMarkdown(markdownText) {
   const codeBlockRegex = /```javascript([\s\S]*?)```/;
   const matches = markdownText.match(codeBlockRegex);
@@ -22,7 +25,7 @@ const sampleRange = (data) => {
   return data.length > 5 ? 5 : data.length - 1;
 };
 const DataAnalysis = () => {
-  const { currentlyStreaming: chartStream, streamResponse: chartStreamer } =
+  const { currentlyStreaming, streamResponse, waitingForStream, cancelStream } =
     useGPTResponseGenerator();
   const [generatedScript, setGeneratedScript] = useState("");
   const [prompt, setPrompt] = useState("");
@@ -91,24 +94,24 @@ bold enough to catch on the eye and grid line colors are #344675
     reader.readAsText(file);
   }
   useEffect(() => {
-    if (chartStream.isStreamComplete) {
-      if (extractCodeFromMarkdown(chartStream.responseStream)) {
+    if (currentlyStreaming.isStreamComplete) {
+      if (extractCodeFromMarkdown(currentlyStreaming.responseStream)) {
         const script =
           `
             const dataset = JSON.parse(\`${JSON.stringify({
               data: dataset,
             })}\`).data
-          ` + extractCodeFromMarkdown(chartStream.responseStream);
+          ` + extractCodeFromMarkdown(currentlyStreaming.responseStream);
 
         setGeneratedScript(script);
         console.log(script);
       }
     }
-  }, [chartStream]);
+  }, [currentlyStreaming]);
 
   useEffect(() => {
     if (dataset.length)
-      chartStreamer({
+      streamResponse({
         prompt: "Suggest some usefull analytics on this dataset",
         conversation: [],
         systemInstructions: systemInstructions,
@@ -120,14 +123,18 @@ bold enough to catch on the eye and grid line colors are #344675
       <Navigationbar />
       <div className="data-analysis-container">
         <div className="chart-area">
-          {generatedScript && <ChartCompiler injectedCode={generatedScript} />}
+          {generatedScript ? (
+            <ChartCompiler injectedCode={generatedScript} />
+          ) : (
+            <ChartTips />
+          )}
         </div>
-        <div className="file-area">
+        <div className="file-area p-2 p-md-0">
           <DropZone
             acceptedFileTypes={".csv"}
             hint={
               <span>
-                <MdOutlineSelectAll /> Select spread sheed{" "}
+                <MdOutlineSelectAll /> Select a CSV sheet{" "}
               </span>
             }
             onLoad={(files) => {
@@ -135,7 +142,7 @@ bold enough to catch on the eye and grid line colors are #344675
             }}
           />
         </div>
-        <div className="chat-area rounded">
+        <div className="chat-area rounded p-2 p-md-1">
           {dataset.length ? (
             <React.Fragment>
               <p className="filename mb-2">
@@ -145,6 +152,7 @@ bold enough to catch on the eye and grid line colors are #344675
                 <Input
                   type="textarea"
                   className="rounded"
+                  placeholder="Prompt in natural language to produce usefull charts..."
                   onChange={(e) => {
                     setPrompt(e.currentTarget.value);
                   }}
@@ -154,26 +162,55 @@ bold enough to catch on the eye and grid line colors are #344675
                 size="sm"
                 block
                 color="primary"
-                disabled={!chartStream.isStreamComplete}
-                onClick={() => {
+                disabled={
+                  !currentlyStreaming.isStreamComplete ||
+                  waitingForStream ||
+                  !prompt
+                }
+                onClick={async () => {
                   setGeneratedScript("");
-                  chartStreamer({
+                  streamResponse({
                     prompt,
                     conversation: [],
                     systemInstructions: systemInstructions,
                   });
                 }}
               >
-                <TbAnalyzeFilled /> Analyze
+                {waitingForStream ? (
+                  <span>Processing...</span>
+                ) : (
+                  <span>
+                    <TbAnalyzeFilled /> Analyze
+                  </span>
+                )}
               </Button>
+              {!currentlyStreaming.isStreamComplete && (
+                <Button
+                  size="sm"
+                  block
+                  color="danger"
+                  className="my-1 mx-0"
+                  onClick={() => {
+                    cancelStream();
+                  }}
+                >
+                  <BsStop /> Stop generating
+                </Button>
+              )}
               <MDFormatedResponse
-                isTyping={!chartStream.isStreamComplete}
+                isTyping={!currentlyStreaming.isStreamComplete}
                 renderPlugins
               >
-                {chartStream.responseStream}
+                {currentlyStreaming.responseStream}
               </MDFormatedResponse>
             </React.Fragment>
-          ) : null}
+          ) : (
+            <UncontrolledAlert>
+              <MdOutlineTipsAndUpdates /> Upon selecting a sheet for analysis,
+              you will discover valuable analysis tips specifically tailored to
+              the content within the sheet.
+            </UncontrolledAlert>
+          )}
         </div>
       </div>
     </React.Fragment>

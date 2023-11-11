@@ -63,4 +63,26 @@
       }
     }
   }
+  @media (max-width: 768px) {
+    .data-analysis-container {
+      display: grid;
+      grid-template-columns: 100%; /* Full width for mobile */
+      grid-template-rows: auto; /* Adjust rows for mobile */
+      height: auto; /* Remove fixed height for mobile */
+      .chart-area {
+        grid-column: 1 / 2; /* Full width for mobile */
+        grid-row: auto; /* Adjust rows for mobile */
+        min-height: 50vh;
+        iframe {
+          min-height: 50vh;
+        }
+      }
+
+      .file-area,
+      .chat-area {
+        grid-column: 1 / 2; /* Full width for mobile */
+        grid-row: auto; /* Adjust rows for mobile */
+      }
+    }
+  }
 }

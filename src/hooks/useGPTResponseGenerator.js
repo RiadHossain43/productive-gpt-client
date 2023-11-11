@@ -1,6 +1,7 @@
 import { useState } from "react";
 import * as aiApi from "../services/ai/index";
 import { useApplication } from "../stores/applicationStore";
+import { toast } from "react-toastify";
 
 /**
  * A single conversation object
@@ -28,11 +29,20 @@ const useGPTResponseGenerator = () => {
     defaultCurrentlyStreamingData
   );
   const { tokenPair, refreshToken } = useApplication();
+  const [waitingForStream, setIsWaitingForStream] = useState(false);
+  const [reader, setReader] = useState(null);
   function reset() {
+    setReader(null);
     setCurrentlyStreaming(defaultCurrentlyStreamingData);
+  }
+  function cancelStream() {
+    if (reader) {
+      reader.cancel();
+    }
   }
   async function streamResponse(payload) {
     try {
+      setIsWaitingForStream(true);
       reset();
       await aiApi.streamResponse(
         {
@@ -44,7 +54,11 @@ const useGPTResponseGenerator = () => {
           headers: {
             "x-auth-accesstoken": tokenPair.accessToken,
           },
+          onStreamStart: function (reader) {
+            setReader(reader);
+          },
           onStream: function (streamString) {
+            setIsWaitingForStream(false);
             /** updating stream state */
             setCurrentlyStreaming((prev) => {
               let currentResponseStream = prev?.responseStream
@@ -60,12 +74,14 @@ const useGPTResponseGenerator = () => {
             });
           },
           onError: function (err) {
-            console.log(err);
+            setIsWaitingForStream(false);
+            toast.error(err.message || "Unknowen server error");
           },
           onTokenRefreshNeed: async function () {
             return { tokenPair: await refreshToken() };
           },
           onStreamEnd: function (fullStreamString) {
+            setIsWaitingForStream(false);
             setCurrentlyStreaming((prev) => {
               return {
                 ...prev,
@@ -78,13 +94,16 @@ const useGPTResponseGenerator = () => {
         }
       );
     } catch (err) {
-      console.log(err);
+      setIsWaitingForStream(false);
+      toast.error(err.message || "Unknowen server error");
     }
   }
   return {
     currentlyStreaming,
+    waitingForStream,
     streamResponse,
     reset,
+    cancelStream,
   };
 };
 

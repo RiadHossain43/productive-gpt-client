@@ -12,6 +12,7 @@ import {
 import logo from "../../../assets/img/brand/logo-ai.png";
 import useForm from "../../../hooks/useForm";
 import PageLayout from "../components/PageLayout";
+import { PiHandWaving } from "react-icons/pi";
 import {
   defaultAuthDataSet,
   defaultAuthDataSetValidation,
@@ -27,7 +28,9 @@ const Login = () => {
     <PageLayout>
       <div className="login-form">
         <img className="login-productiveai-logo mb-4" src={logo} />
-        <h4 className="">Welcome!</h4>
+        <h4 className="">
+          <PiHandWaving /> Welcome!
+        </h4>
         <p className="mb-5">
           Boost your business efficiency with our freetools.
         </p>

@@ -36,6 +36,7 @@
     "not op_mini all"
   ],
   "dependencies": {
+    "@riadhossain43/ui-kit": "^1.0.0",
     "@stripe/react-stripe-js": "^2.1.0",
     "@stripe/stripe-js": "^1.54.0",
     "add": "^2.0.6",
